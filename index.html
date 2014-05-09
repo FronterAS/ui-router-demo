@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ui router demo</title>
+        <style>
+            .ui-sref-demo {
+                font-size: 3em;
+                color: red;
+            }
+        </style>
+        <script src="components/angular/angular.js"></script>
+        <script src="components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="app">
+        <a ui-sref="top.nest" ui-sref-active="ui-sref-demo">Go to nest</a>
+        <div ui-view></div>
+    </body>
+</html>
